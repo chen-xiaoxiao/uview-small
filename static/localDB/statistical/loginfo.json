@@ -1,0 +1,11 @@
+{
+	"success": true,
+	"message": "登录成功",
+	"code": 200,
+	"result": {
+		"totalVisitCount": 487,
+		"todayVisitCount": 39,
+		"todayIp": 2
+	},
+	"timestamp": 1583928278518
+}

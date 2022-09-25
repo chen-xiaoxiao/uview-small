@@ -1,0 +1,10 @@
+{
+	"success": true,
+	"message": "操作成功！",
+	"code": 0,
+	"result": {
+		"code": "1111",
+		"key": "a875dcd079e0ffde40e6883e9c60a53d"
+	},
+	"timestamp": 1583915821029
+}

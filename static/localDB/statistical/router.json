@@ -1,0 +1,770 @@
+{
+  "success": true,
+  "message": "查询成功",
+  "code": 200,
+  "result": {
+    "menu": [
+      {
+        "redirect": null,
+        "path": "/statistics",
+        "component": "layouts/RouteView",
+        "route": "1",
+        "children": [
+          {
+            "path": "/statistics/websiteComprehensive",
+            "component": "statistics/website/comprehensive",
+            "route": "1",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "网站综合数据",
+              "icon": "tags"
+            },
+            "hidden": false,
+            "name": "websiteComprehensive",
+            "id": "websiteComprehensive"
+          },
+          {
+            "path": "/statistics/channelComprehensive",
+            "component": "statistics/channel/comprehensive",
+            "route": "2",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "频道综合数据",
+              "icon": "tags"
+            },
+            "hidden": false,
+            "name": "channelComprehensive",
+            "id": "channelComprehensive"
+          },
+          {
+            "path": "/statistics/login",
+            "component": "statistics/channel/login",
+            "route": "3",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "登录数据",
+              "icon": "idcard"
+            },
+            "hidden": false,
+            "name": "channelLogin",
+            "id": "channelLogin"
+          },
+          {
+            "path": "/statistics/plan",
+            "component": "statistics/channel/plan",
+            "route": "4",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "行业方案",
+              "icon": "schedule"
+            },
+            "hidden": false,
+            "name": "channelPlan",
+            "id": "channelPlan"
+          },
+          {
+            "path": "/statistics/store",
+            "component": "statistics/channel/store",
+            "route": "5",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "应用商店",
+              "icon": "shop"
+            },
+            "hidden": false,
+            "name": "channelStore",
+            "id": "channelStore"
+          },
+          {
+            "path": "/statistics/base",
+            "component": "statistics/channel/base",
+            "route": "6",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "数字底座",
+              "icon": "deployment-unit"
+            },
+            "hidden": false,
+            "name": "channelBase",
+            "id": "channelBase"
+          },
+          {
+            "path": "/statistics/order",
+            "component": "statistics/channel/order",
+            "route": "7",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "订单数据",
+              "icon": "file-text"
+            },
+            "hidden": false,
+            "name": "channelOrder",
+            "id": "channelOrder"
+          }
+        ],
+        "meta": {
+          "keepAlive": false,
+          "internalOrExternal": false,
+          "icon": "profile",
+          "title": "数据统计平台"
+        },
+        "hidden": false,
+        "name": "statistics",
+        "id": "statistics"
+      },
+      {
+        "redirect": null,
+        "path": "/application",
+        "component": "layouts/RouteView",
+        "route": "2",
+        "children": [
+          {
+            "path": "/application/appClassList",
+            "component": "application/appClass/appClass",
+            "route": "1",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "应用类型管理",
+              "icon": "tags"
+            },
+            "hidden": false,
+            "name": "appClassList",
+            "id": "appClassList"
+          },
+          {
+            "path": "/application/skuList",
+            "component": "application/spuCtr/skuList",
+            "route": "2",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "应用管理",
+              "icon": "tags"
+            },
+            "hidden": false,
+            "name": "skuList",
+            "id": "skuList"
+          },
+          {
+            "path": "/application/hotAppList",
+            "component": "application/hotApp/hotApp",
+            "route": "4",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "热门管理",
+              "icon": "tags"
+            },
+            "hidden": false,
+            "name": "hotApp",
+            "id": "hotApp"
+          },
+          {
+            "path": "/application/spuCtr/skuAdd",
+            "component": "application/spuCtr/module/skuSave",
+            "route": "1",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "新增应用",
+              "icon": "tags"
+            },
+            "hidden": true,
+            "name": "sku-add",
+            "id": "skuAdd"
+          },
+          {
+            "path": "/application/spuCtr/skuEdit/:id",
+            "component": "application/spuCtr/module/skuEdit",
+            "route": "2",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "编辑应用",
+              "icon": "tags"
+            },
+            "hidden": true,
+            "name": "sku-edit",
+            "id": "skuEdit"
+          },
+          {
+            "path": "/application/spuCtr/skuAudit/:id",
+            "component": "application/spuCtr/module/skuAudit",
+            "route": "2",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "审核应用",
+              "icon": "tags"
+            },
+            "hidden": true,
+            "name": "sku-audit",
+            "id": "skuAudit"
+          }
+        ],
+        "meta": {
+          "keepAlive": false,
+          "internalOrExternal": false,
+          "icon": "profile",
+          "title": "应用管理"
+        },
+        "hidden": false,
+        "name": "application",
+        "id": "application"
+      },
+      {
+        "redirect": null,
+        "path": "/order",
+        "component": "layouts/RouteView",
+        "route": "3",
+        "children": [
+          {
+            "path": "/order/orderList",
+            "component": "order/order/order",
+            "route": "1",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "订单管理",
+              "icon": "tags"
+            },
+            "hidden": false,
+            "name": "orderList",
+            "id": "orderList"
+          },
+          {
+            "path": "/order/distribution",
+            "component": "order/distribution/distribution",
+            "route": "2",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "订单分配",
+              "icon": "tags"
+            },
+            "hidden": false,
+            "name": "distribution",
+            "id": "distribution"
+          },
+          {
+            "path": "/order/setOrder",
+            "component": "order/setOrder/setOrder",
+            "route": "1",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "订单配置",
+              "icon": "tags"
+            },
+            "hidden": false,
+            "name": "setOrder",
+            "id": "setOrder"
+          }
+        ],
+        "meta": {
+          "keepAlive": false,
+          "internalOrExternal": false,
+          "icon": "profile",
+          "title": "订单管理"
+        },
+        "hidden": false,
+        "name": "order",
+        "id": "order"
+      },
+      {
+        "redirect": null,
+        "path": "/notice",
+        "component": "layouts/RouteView",
+        "route": "4",
+        "children": [
+          {
+            "path": "/notice/notificationList",
+            "component": "notice/notice/notificationList",
+            "route": "1",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "通知管理",
+              "icon": "tags"
+            },
+            "hidden": false,
+            "name": "notificationList",
+            "id": "notificationList"
+          }
+        ],
+        "meta": {
+          "keepAlive": false,
+          "internalOrExternal": false,
+          "icon": "profile",
+          "title": "通知管理"
+        },
+        "hidden": false,
+        "name": "notice",
+        "id": "notice"
+      },
+      {
+        "redirect": null,
+        "path": "/solutions",
+        "component": "layouts/RouteView",
+        "route": "5",
+        "children": [
+          {
+            "path": "/solutions/typeList",
+            "component": "solutions/type/typeList",
+            "route": "1",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "方案类型管理",
+              "icon": "tags"
+            },
+            "hidden": false,
+            "name": "typeList",
+            "id": "typeList"
+          },
+          {
+            "path": "/solutions/solutionList",
+            "component": "application/solution/solutionList",
+            "route": "2",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "解决方案管理",
+              "icon": "tags"
+            },
+            "hidden": false,
+            "name": "solutionList",
+            "id": "solutionList"
+          },
+          {
+            "path": "/solutions/solution/solutionAdd",
+            "component": "application/solution/module/solutionAdd",
+            "route": "3",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "新增解决方案",
+              "icon": "tags"
+            },
+            "hidden": true,
+            "name": "solution-add",
+            "id": "solutionAdd"
+          },
+          {
+            "path": "/solutions/solution/solutionEdit/:id",
+            "component": "application/solution/module/solutionEdit",
+            "route": "4",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "编辑解决方案",
+              "icon": "tags"
+            },
+            "hidden": true,
+            "name": "solution-edit",
+            "id": "solutionEdit"
+          },
+          {
+            "path": "/solutions/solution/solutionAudit/:id",
+            "component": "application/solution/module/solutionAudit",
+            "route": "5",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "解决方案信息审核",
+              "icon": "tags"
+            },
+            "hidden": true,
+            "name": "solution-audit",
+            "id": "solutionAudit"
+          }
+        ],
+        "meta": {
+          "keepAlive": false,
+          "internalOrExternal": false,
+          "icon": "profile",
+          "title": "解决方案管理"
+        },
+        "hidden": false,
+        "name": "solutions",
+        "id": "solutions"
+      },
+      {
+        "redirect": null,
+        "path": "/resources",
+        "component": "layouts/RouteView",
+        "route": "6",
+        "children": [
+          {
+            "path": "/processing/processing",
+            "component": "resources/processing/processing",
+            "route": "1",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "处理效率统计",
+              "icon": "tags"
+            },
+            "hidden": false,
+            "name": "processing",
+            "id": "processing"
+          }
+        ],
+        "meta": {
+          "keepAlive": false,
+          "internalOrExternal": false,
+          "icon": "profile",
+          "title": "资源调度管理"
+        },
+        "hidden": false,
+        "name": "resources",
+        "id": "resources"
+      },
+      {
+        "redirect": null,
+        "path": "/partner",
+        "component": "layouts/RouteView",
+        "route": "7",
+        "children": [
+          {
+            "path": "/partnerInfoManage/partnerInfoManage",
+            "component": "partner/partnerInfoManage/partnerInfoManage",
+            "route": "1",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "企业信息管理",
+              "icon": "tags"
+            },
+            "hidden": false,
+            "name": "partnerInfoManage",
+            "id": "partnerInfoManage"
+          },
+          {
+            "path": "/partnerInfoManage/partnerInfoManage/partnerAdd",
+            "component": "partner/partnerInfoManage/module/partnerAdd",
+            "route": "2",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "合作伙伴新增",
+              "icon": "tags"
+            },
+            "hidden": true,
+            "name": "partner-add",
+            "id": "partnerAdd"
+          },
+          {
+            "path": "/partnerInfoManage/partnerInfoManage/partnerEdit/:id",
+            "component": "partner/partnerInfoManage/module/partnerEdit",
+            "route": "3",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "合作伙伴编辑",
+              "icon": "tags"
+            },
+            "hidden": true,
+            "name": "partner-edit",
+            "id": "partnerEdit"
+          },
+          {
+            "path": "/partnerInfoManage/partnerInfoManage/partnerAudit/:id",
+            "component": "partner/partnerInfoManage/module/partnerAudit",
+            "route": "4",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "合作伙伴信息审核",
+              "icon": "tags"
+            },
+            "hidden": true,
+            "name": "partner-audit",
+            "id": "partnerAudit"
+          },
+          {
+            "path": "/partnerInfoManage/cppartnersLevel",
+            "component": "partner/partnerInfoManage/cppartnersLevel",
+            "route": "5",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "合作伙伴等级",
+              "icon": "tags"
+            },
+            "hidden": false,
+            "name": "cppartnersLevel",
+            "id": "cppartnersLevel"
+          }
+        ],
+        "meta": {
+          "keepAlive": false,
+          "internalOrExternal": false,
+          "icon": "profile",
+          "title": "企业信息管理"
+        },
+        "hidden": false,
+        "name": "partner",
+        "id": "partner"
+      },
+
+      {
+        "redirect": null,
+        "path": "/servers",
+        "component": "layouts/RouteView",
+        "route": "9",
+        "children": [
+          {
+            "path": "/servers/administration",
+            "component": "servers/administration/administration",
+            "route": "1",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "服务与支持",
+              "icon": "tags"
+            },
+            "hidden": false,
+            "name": "administration",
+            "id": "administration"
+          }
+
+        ],
+        "meta": {
+          "keepAlive": false,
+          "internalOrExternal": false,
+          "icon": "profile",
+          "title": "服务与支持"
+        },
+        "hidden": false,
+        "name": "servers",
+        "id": "servers"
+      },
+      {
+        "redirect": null,
+        "path": "/cooperation",
+        "component": "layouts/RouteView",
+        "route": "10",
+        "children": [
+          {
+            "path": "/cooperation/index",
+            "component": "cooperation/index",
+            "route": "1",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "合作案例",
+              "icon": "tags"
+            },
+            "hidden": false,
+            "name": "cooperation",
+            "id": "cooperation"
+          },
+          {
+            "path": "/cooperation/addCase/detail",
+            "component": "cooperation/module/addCase/detail",
+            "route": "1",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "合作案例管理",
+              "icon": "tags"
+            },
+            "hidden": true,
+            "name": "detail",
+            "id": "detail"
+          }
+
+        ],
+        "meta": {
+          "keepAlive": false,
+          "internalOrExternal": false,
+          "icon": "profile",
+          "title": "合作案例"
+        },
+        "hidden": false,
+        "name": "servers",
+        "id": "servers"
+      },
+      {
+        "redirect": null,
+        "path": "/gateway",
+        "component": "layouts/RouteView",
+        "route": "10",
+        "children": [
+          {
+            "path": "/gateway/index",
+            "component": "gateway/index",
+            "route": "1",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "门户管理",
+              "icon": "tags"
+            },
+            "hidden": false,
+            "name": "gateway",
+            "id": "gateway"
+          },
+          {
+            "path": "/gateway/add/index",
+            "component": "gateway/module/add/index",
+            "route": "2",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "门户新增/编辑",
+              "icon": "tags"
+            },
+            "hidden": true,
+            "name": "add",
+            "id": "add"
+          },
+
+          {
+            "path": "/gateway/operation/index",
+            "component": "gateway/module/operation/index",
+            "route": "3",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "上下架",
+              "icon": "tags"
+            },
+            "hidden": true,
+            "name": "operation",
+            "id": "operation"
+          },
+          {
+            "path": "/gateway/enterprise/index",
+            "component": "gateway/module/enterprise/index",
+            "route": "4",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "企业专区专题服务",
+              "icon": "tags"
+            },
+            "hidden": true,
+            "name": "enterprise",
+            "id": "enterprise"
+          }
+
+
+        ],
+        "meta": {
+          "keepAlive": false,
+          "internalOrExternal": false,
+          "icon": "profile",
+          "title": "门户管理"
+        },
+        "hidden": false,
+        "name": "gateway",
+        "id": "gateway"
+      },
+      {
+        "redirect": null,
+        "path": "/specialArea",
+        "component": "layouts/RouteView",
+        "route": "11",
+        "children": [
+          {
+            "path": "/specialArea/index",
+            "component": "specialArea/index",
+            "route": "1",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "专区信息管理",
+              "icon": "tags"
+            },
+            "hidden": false,
+            "name": "specialArea",
+            "id": "specialArea"
+          },
+          {
+            "path": "/specialArea/addSpecialArea/detail",
+            "component": "specialArea/module/addSpecialArea/detail",
+            "route": "2",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "专区信息编辑",
+              "icon": "tags"
+            },
+            "hidden": true,
+            "name": "addSpecialArea",
+            "id": "addSpecialArea"
+          }
+
+        ],
+        "meta": {
+          "keepAlive": false,
+          "internalOrExternal": false,
+          "icon": "profile",
+          "title": "专区信息管理"
+        },
+        "hidden": false,
+        "name": "specialArea",
+        "id": "specialArea"
+      },
+      {
+        "redirect": null,
+        "path": "/special",
+        "component": "layouts/RouteView",
+        "route": "12",
+        "children": [
+          {
+            "path": "/special/index",
+            "component": "special/index",
+            "route": "1",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "专题信息管理",
+              "icon": "tags"
+            },
+            "hidden": false,
+            "name": "special",
+            "id": "special"
+          },
+          {
+            "path": "/special/addSpecial/detail",
+            "component": "special/module/addSpecial/detail",
+            "route": "2",
+            "meta": {
+              "keepAlive": false,
+              "internalOrExternal": false,
+              "title": "专题信息编辑",
+              "icon": "tags"
+            },
+            "hidden": true,
+            "name": "addSpecial",
+            "id": "addSpecial"
+          }
+
+        ],
+        "meta": {
+          "keepAlive": false,
+          "internalOrExternal": false,
+          "icon": "profile",
+          "title": "专题信息管理"
+        },
+        "hidden": false,
+        "name": "specialArea",
+        "id": "specialArea"
+      }
+    ]
+  },
+  "timestamp": 1593489600000
+}
+
+

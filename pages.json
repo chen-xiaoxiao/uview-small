@@ -1,0 +1,150 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"app-plus": {
+					"bounce": "none", //关闭窗口回弹效果
+					"titleNView": {
+						// "buttons": [ //原生标题栏按钮配置,
+						// 	{
+						// 		"text": "分享" //原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+						// 	}
+						// ],
+						// "backButton": { //自定义 backButton
+						// 	"background": "#00FF00"
+						// },
+						// "type": "transparent",//透明渐变导航栏 App-nvue 2.4.4+ 支持
+						// "searchInput": {
+						// 	"backgroundColor": "#fff",
+						// 	"borderRadius": "6px", //输入框圆角
+						// 	"placeholder": "请输入搜索内容",
+						// 	"disabled": true //disable时点击输入框不置焦，可以跳到新页面搜索
+						// },
+					}
+					
+				}
+			}
+		}
+	    ,{
+            "path" : "pages/classify/classify",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "分类",
+                "enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": true , //禁用原生导航栏
+					"subNVues":[{//侧滑菜单
+						"id": "drawer", //subNVue 的 id，可通过 uni.getSubNVueById('drawer') 获取
+						"path": "components/nvue/drawer.nvue", // nvue 路径
+						"style": { //webview style 子集，文档可暂时开放出来位置，大小相关配置
+							"position": "popup", //除 popup 外，其他值域参考 5+ webview position 文档
+							"width": "50%"
+						}
+	
+					}, {//弹出层
+						"id": "popup",
+						"path": "components/popup",
+						"style": {
+							"position": "popup",
+							"margin":"auto",
+							"width": "150px",
+							"height": "150px"
+						}
+	
+					}, {//自定义头
+						"id": "nav",
+						"path": "components/nav",
+						"style": {
+							"position": "dock",
+							"height": "44px"
+						}
+	
+					}]
+				}
+            }
+            
+        }
+		,{
+		    "path" : "pages/shoppingAround/shoppingAround",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "购物圈",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/shoppingCart/shoppingCart",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "购物车",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "逍.SHOP",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+			"color": "#7A7E83",
+			"selectedColor": "#ff6a6c",
+			"borderStyle": "black",
+			"backgroundColor": "#ffffff",
+			"height": "50px",
+			"fontSize": "10px",
+			"iconWidth": "24px",
+			"spacing": "3px",
+			"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/images/tabbar/home.png",
+				"selectedIconPath": "static/images/tabbar/home-active.png",
+				"text": "首页"
+			},{
+				"pagePath": "pages/classify/classify",
+				"iconPath": "static/images/tabbar/category.png",
+				"selectedIconPath": "static/images/tabbar/category-active.png",
+				"text": "分类"
+			},{
+				"pagePath": "pages/shoppingAround/shoppingAround",
+				"iconPath": "static/images/tabbar/shopping.png",
+				"selectedIconPath": "static/images/tabbar/shopping-active.png",
+				"text": "购物圈"
+			},{
+				"pagePath": "pages/shoppingCart/shoppingCart",
+				"iconPath": "static/images/tabbar/cart.png",
+				"selectedIconPath": "static/images/tabbar/cart-active.png",
+				"text": "购物车"
+			}
+			,{
+				"pagePath": "pages/my/my",
+				"iconPath": "static/images/tabbar/user.png",
+				"selectedIconPath": "static/images/tabbar/user-active.png",
+				"text": "我的"
+			}
+			],
+			"midButton": {// list 偶数时显示
+				"width": "80px",
+				"height": "50px",
+				"text": "文字",
+				"iconPath": "static/images/logo.png",
+				"iconWidth": "24px",
+				"backgroundImage": "static/images/tabbar/cart-active.png"
+			}
+		}
+}
